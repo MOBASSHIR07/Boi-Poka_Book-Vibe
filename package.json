@@ -7,14 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && surge dist boi_poka_book_vibe.surge.sh"
   },
   "dependencies": {
     "localforage": "^1.10.0",
+    "lucide-react": "^0.508.0",
     "match-sorter": "^8.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.3",
+    "react-tabs": "^6.1.0",
+    "react-toastify": "^11.0.5",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
