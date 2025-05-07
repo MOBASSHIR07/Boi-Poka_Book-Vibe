@@ -10,7 +10,7 @@ A React-based web application for managing and exploring a collection of books w
 
 - ✅ Browse a collection of books with cover images  
 - ✅ View detailed book information (title, author, rating, etc.)  
-- ✅ Add books to the reading list  
+- ✅ Add books to the reading list
 - ✅ Add books to the wishlist  
 - ✅ Separate tabs for viewing the reading list and wishlist  
 - ✅ Modern, responsive UI using Tailwind CSS  
