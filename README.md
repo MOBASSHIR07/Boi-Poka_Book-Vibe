@@ -43,24 +43,6 @@ A React-based web application for managing and exploring a collection of books w
 - **React Rating** – For displaying star ratings (optional/implementable)  
 
 ---
-
-## 📦 **Book Data (JSON Format)**
-
-```json
-{
-  "bookId": 1,
-  "bookName": "The Great Gatsby",
-  "author": "F. Scott Fitzgerald",
-  "image": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg",
-  "review": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece...",
-  "totalPages": 192,
-  "rating": 4.5,
-  "category": "Classic",
-  "tags": ["Fiction", "Romance"],
-  "publisher": "Scribner",
-  "yearOfPublishing": 1925
-}
-
 ## Key Components
 Book – Displays individual book card with basic info
 
@@ -84,3 +66,22 @@ Local Storage Utilities – Handles persistence of reading lists and wishlists
 📱 Responsive improvements for mobile devices
 
 🔗 Integration with external book APIs for expanded collection
+
+
+## 📦 **Book Data (JSON Format)**
+
+```json
+{
+  "bookId": 1,
+  "bookName": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "image": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg",
+  "review": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece...",
+  "totalPages": 192,
+  "rating": 4.5,
+  "category": "Classic",
+  "tags": ["Fiction", "Romance"],
+  "publisher": "Scribner",
+  "yearOfPublishing": 1925
+}
+
