@@ -45,7 +45,7 @@ const ListedBooks = () => {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm absolute top-[80%] mt-1"
+                    className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm absolute top-[0%] mt-1"
                 >
                     <li onClick={() => handleSort('Ratings')}><a>Ratings</a></li>
                     <li onClick={() => handleSort('No of pages')}><a>No of Pages</a></li>

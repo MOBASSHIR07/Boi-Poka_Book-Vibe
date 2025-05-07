@@ -17,7 +17,7 @@ const Banner = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         borderRadius: '2rem',
-        overflow: 'hidden',
+      
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60 rounded-[2rem]"></div>

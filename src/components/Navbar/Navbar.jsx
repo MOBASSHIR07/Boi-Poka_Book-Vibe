@@ -35,7 +35,8 @@ const Navbar = () => {
     );
 
     return (
-        <div className="navbar bg-white/70 backdrop-blur-md shadow-md rounded-xl mx-4 mt-4 px-4 py-2 mb-4" >
+        <div className="navbar relative z-50 bg-white/70 backdrop-blur-md shadow-md rounded-xl mx-4 mt-4 px-4 py-2 mb-4">
+
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -56,7 +57,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-white shadow-lg rounded-lg w-52 mt-3 z-[1] p-2"
+                        className="menu menu-sm dropdown-content bg-white shadow-lg rounded-lg w-52 mt-3 z-50 p-2"
                     >
                         {links}
                     </ul>
@@ -65,8 +66,8 @@ const Navbar = () => {
                     BOI POKA
                 </a>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 space-x-4">
+            <div className="navbar-center hidden lg:flex ">
+                <ul className="menu menu-horizontal px-1 space-x-4 ">
                     {links}
                 </ul>
             </div>
