@@ -61,7 +61,7 @@ A React-based web application for managing and exploring a collection of books w
   "yearOfPublishing": 1925
 }
 
-##🌟 Key Components
+## Key Components
 Book – Displays individual book card with basic info
 
 BookDetail – Shows detailed information about a selected book
@@ -72,7 +72,7 @@ Navbar – Responsive navigation bar with links
 
 Local Storage Utilities – Handles persistence of reading lists and wishlists
 
-##🔮 Future Enhancements
+## Future Enhancements
 🔐 User authentication system
 
 🔍 Search and filtering functionality
