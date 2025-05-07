@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { getStoredReadList ,getStoredWishList} from '../../utilities/addToDb';
+import { getStoredReadList, getStoredWishList } from '../../utilities/addToDb';
 import Book from '../Book/Book';
 
 const ListedBooks = () => {
     const [readList, setReadList] = useState([]);
     const [wishList, setWishList] = useState([]);
+    const [sort, setSort] = useState('');
     const allbooks = useLoaderData();
     useEffect(() => {
 
@@ -22,9 +23,34 @@ const ListedBooks = () => {
         setWishList(wishBookList);
 
     }, [])
+
+    const handleSort = (criteria) => {
+        setSort(criteria);
+        if (criteria === 'Ratings') {
+            const sortedBooks = [...readList].sort((a, b) => b.rating - a.rating);
+            setReadList(sortedBooks);
+        }
+        else if (criteria === 'No of pages') {
+            const sortedBooks = [...readList].sort((a, b) => a.totalPages - b.totalPages);
+            setReadList(sortedBooks);
+        }
+    }
+
     return (
         <div>
-            <h3 className='text-3xl my-8 '>Listed Books</h3>
+            <h3 className='text-3xl my-8 text-center '>Listed Books</h3>
+            <div className="dropdown dropdown-center mb-4 flex justify-center items-center relative">
+                <div tabIndex={0} role="button" className="btn m-1">
+                    {sort ? `Sort By : ${sort}` : 'Sort by⬇️'}
+                </div>
+                <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm absolute top-[80%] mt-1"
+                >
+                    <li onClick={() => handleSort('Ratings')}><a>Ratings</a></li>
+                    <li onClick={() => handleSort('No of pages')}><a>No of Pages</a></li>
+                </ul>
+            </div>
             <Tabs>
                 <TabList>
                     <Tab>Read List</Tab>
